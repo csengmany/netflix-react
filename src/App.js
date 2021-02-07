@@ -7,7 +7,7 @@ import sound from "./assets/audios/toudoum.mp3";
 function App() {
     return (
         <div className="App">
-            <audio src={sound}></audio>
+            <audio src={sound} autoPlay></audio>
             <Header />
             {moviesList.map((item, index) => {
                 return (
