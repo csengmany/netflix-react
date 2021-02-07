@@ -69,6 +69,7 @@ html {
 
 .section div:nth-child(2) {
     background-color: #fff;
+    flex-shrink: 1;
     display: flex;
     overflow-x: hidden;
     overflow: scroll;
