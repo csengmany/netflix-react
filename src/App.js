@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import moviesList from "./movies.json";
+import Section from "./components/Section";
+import sound from "./assets/audios/toudoum.mp3";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <audio src={sound}></audio>
+            <Header />
+            {moviesList.map((item, index) => {
+                return (
+                    <Section
+                        key={index}
+                        category={item.category}
+                        images={item.images}
+                    />
+                );
+            })}
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
