@@ -4,4 +4,4 @@
 
 ## Screenshot
 
-![screen_netflix](https://github.com/csengmany/marmiton/blob/main/assets/images/netflix.png)
+![screen_netflix](https://github.com/csengmany/netflix-react/blob/main/src/assets/images/netflix.png)
