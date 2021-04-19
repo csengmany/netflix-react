@@ -5,7 +5,7 @@ const Movie = ({ category, images }) => {
         <div className="section">
             <div>{category}</div>
 
-            <div>
+            <div data-testid="list">
                 {images.map((url, index) => {
                     return (
                         <img

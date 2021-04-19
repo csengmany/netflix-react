@@ -4,7 +4,7 @@ import mini from "../assets/images/miniLogo.png";
 const Header = () => {
     return (
         <div className="header">
-            <img src={logo} alt="netflix logo" />
+            <img id="logo" src={logo} alt="netflix logo" />
             <img src={mini} alt="mini netflix logo" />
         </div>
     );
